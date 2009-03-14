@@ -12,6 +12,7 @@ include $(GST_PLUGINS_BASE_TOP)/gst-libs/gst/riff/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst-libs/gst/pbutils/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst-libs/gst/rtp/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst-libs/gst/rtsp/Android.mk
+include $(GST_PLUGINS_BASE_TOP)/gst-libs/gst/interfaces/Android.mk
 
 # plugins without external dependencies
 include $(GST_PLUGINS_BASE_TOP)/gst/audiotestsrc/Android.mk
