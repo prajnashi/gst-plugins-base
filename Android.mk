@@ -28,4 +28,5 @@ include $(GST_PLUGINS_BASE_TOP)/gst/typefind/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst/videorate/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst/videoscale/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst/videotestsrc/Android.mk
+include $(GST_PLUGINS_BASE_TOP)/gst/volume/Android.mk
 
