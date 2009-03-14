@@ -24,6 +24,7 @@ include $(GST_PLUGINS_BASE_TOP)/gst/playback/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst/speexresample/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst/tcp/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst/typefind/Android.mk
+include $(GST_PLUGINS_BASE_TOP)/gst/videorate/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst/videoscale/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst/videotestsrc/Android.mk
 
