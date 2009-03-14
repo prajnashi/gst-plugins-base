@@ -16,6 +16,7 @@ include $(GST_PLUGINS_BASE_TOP)/gst-libs/gst/rtsp/Android.mk
 # plugins without external dependencies
 include $(GST_PLUGINS_BASE_TOP)/gst/audiotestsrc/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst/audioconvert/Android.mk
+include $(GST_PLUGINS_BASE_TOP)/gst/audiorate/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst/ffmpegcolorspace/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst/gdp/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst/playback/Android.mk
