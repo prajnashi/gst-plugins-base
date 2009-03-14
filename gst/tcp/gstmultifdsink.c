@@ -718,6 +718,7 @@ setup_dscp_client (GstMultiFdSink * sink, GstTCPClient * client)
 
   af = ssaddr.ss_family;
 
+#ifdef IN6_IS_ADDR_V4MAPPED
   /* if this is an IPv4-mapped address then do IPv4 QoS */
   if (af == AF_INET6) {
     struct sockaddr_in6 *saddr6 = (struct sockaddr_in6 *) &ssaddr;
@@ -728,6 +729,7 @@ setup_dscp_client (GstMultiFdSink * sink, GstTCPClient * client)
       af = AF_INET;
     }
   }
+#endif
 
   /* extract and shift 6 bits of the DSCP */
   tos = (sink->qos_dscp & 0x3f) << 2;
