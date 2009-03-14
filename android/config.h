@@ -329,3 +329,9 @@
 #ifndef __cplusplus
 /* #undef inline */
 #endif
+
+/* bionic doesnt have INET_ADDRSTRLEN (even though it has the ipv6 equivalent?!??!) */
+#ifndef INET_ADDRSTRLEN
+#define INET_ADDRSTRLEN 16
+#endif
+
