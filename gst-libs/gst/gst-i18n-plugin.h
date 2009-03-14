@@ -22,6 +22,8 @@
 #ifndef __GST_I18N_PLUGIN_H__
 #define __GST_I18N_PLUGIN_H__
 
+#ifndef DISABLE_GST_I18N
+
 #include <locale.h>  /* some people need it and some people don't */
 #include "gettext.h" /* included with gettext distribution and copied */
 
@@ -34,4 +36,10 @@
 #define N_(String) gettext_noop (String)
 /* FIXME: if we need it, we can add Q_ as well, like in glib */
 
+#else /* DISABLE_GST_I18N */
+
+#define _(x) (x)
+#define N_(X) (X)
+
+#endif /* DISABLE_GST_I18N */
 #endif /* __GST_I18N_PLUGIN_H__ */
