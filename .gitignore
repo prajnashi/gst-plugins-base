@@ -28,4 +28,6 @@ autoregen.sh
 ABOUT-NLS
 _stdint.h
 
+*~
+
 gst-plugins-base-*.tar*
