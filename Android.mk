@@ -30,3 +30,5 @@ include $(GST_PLUGINS_BASE_TOP)/gst/videoscale/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst/videotestsrc/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst/volume/Android.mk
 
+# plugins WITH external dependencies
+include $(GST_PLUGINS_BASE_TOP)/ext/ogg/Android.mk
