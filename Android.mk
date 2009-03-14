@@ -21,6 +21,7 @@ include $(GST_PLUGINS_BASE_TOP)/gst/audioresample/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst/ffmpegcolorspace/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst/gdp/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst/playback/Android.mk
+include $(GST_PLUGINS_BASE_TOP)/gst/speexresample/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst/videoscale/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst/videotestsrc/Android.mk
 
