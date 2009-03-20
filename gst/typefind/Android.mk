@@ -2,10 +2,6 @@ LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
 
-# Figure out why we can't use libxml2
-#SAMIPARSE_SOURCES = samiparse.c samiparse.h
-SAMIPARSE_SOURCES = 
-
 LOCAL_SRC_FILES:= 			\
 	gsttypefindfunctions.c
 
@@ -18,8 +14,6 @@ LOCAL_SHARED_LIBRARIES := 	\
 	libgobject-2.0
 
 LOCAL_MODULE:= libgsttypefindfunctions
-
-LOCAL_PRELINK_MODULE := false 
 
 LOCAL_C_INCLUDES := 			\
 	$(LOCAL_PATH)			\
@@ -42,4 +36,4 @@ LOCAL_C_INCLUDES := 			\
 LOCAL_CFLAGS := \
 	-DHAVE_CONFIG_H	
 
-include $(BUILD_SHARED_LIBRARY)
+include $(BUILD_PLUGIN_LIBRARY)

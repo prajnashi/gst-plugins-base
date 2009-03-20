@@ -18,8 +18,6 @@ LOCAL_SHARED_LIBRARIES :=	\
 	libgmodule-2.0		\
 	libgobject-2.0
 
-LOCAL_PRELINK_MODULE := false 
-
 LOCAL_MODULE:= libgstvideoscale
 
 LOCAL_C_INCLUDES := \
@@ -46,4 +44,4 @@ LOCAL_C_INCLUDES := \
 LOCAL_CFLAGS := \
 	-DHAVE_CONFIG_H	
 
-include $(BUILD_SHARED_LIBRARY)
+include $(BUILD_PLUGIN_LIBRARY)

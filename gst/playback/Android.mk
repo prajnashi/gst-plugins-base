@@ -27,8 +27,6 @@ LOCAL_SHARED_LIBRARIES := 	\
 
 LOCAL_MODULE:= libgstplaybin
 
-LOCAL_PRELINK_MODULE := false 
-
 LOCAL_C_INCLUDES := 			\
 	$(LOCAL_PATH)			\
 	$(LOCAL_PATH)/android		\
@@ -52,4 +50,4 @@ LOCAL_C_INCLUDES := 			\
 LOCAL_CFLAGS := \
 	-DHAVE_CONFIG_H	
 
-include $(BUILD_SHARED_LIBRARY)
+include $(BUILD_PLUGIN_LIBRARY)

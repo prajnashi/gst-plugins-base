@@ -2,7 +2,8 @@ LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
 
-# Figure out why we can't use libxml2
+# We can't use samiparse because we don't have proper libxml2
+# *BUT* this was fixed in git (it uses gregex from newer glib)
 #SAMIPARSE_SOURCES = samiparse.c samiparse.h
 SAMIPARSE_SOURCES = 
 
@@ -29,8 +30,6 @@ LOCAL_SHARED_LIBRARIES := 	\
 
 LOCAL_MODULE:= libgsttcp
 
-LOCAL_PRELINK_MODULE := false 
-
 LOCAL_C_INCLUDES := 			\
 	$(LOCAL_PATH)			\
 	$(LOCAL_PATH)/android		\
@@ -52,4 +51,4 @@ LOCAL_C_INCLUDES := 			\
 LOCAL_CFLAGS := \
 	-DHAVE_CONFIG_H	
 
-include $(BUILD_SHARED_LIBRARY)
+include $(BUILD_PLUGIN_LIBRARY)
