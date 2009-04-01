@@ -10,6 +10,9 @@ LOCAL_SRC_FILES:= 		\
 	gstoggaviparse.c 	\
 	gstoggparse.c
 
+LOCAL_STATIC_LIBRARIES :=	\
+	libogg
+
 LOCAL_SHARED_LIBRARIES :=	\
 	libgstreamer-0.10	\
 	libgstaudio-0.10	\
@@ -19,8 +22,7 @@ LOCAL_SHARED_LIBRARIES :=	\
 	libglib-2.0		\
 	libgthread-2.0		\
 	libgmodule-2.0		\
-	libgobject-2.0		\
-	libogg
+	libgobject-2.0
 
 LOCAL_MODULE:= libgstogg
 
