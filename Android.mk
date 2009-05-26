@@ -13,6 +13,7 @@ include $(GST_PLUGINS_BASE_TOP)/gst-libs/gst/pbutils/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst-libs/gst/rtp/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst-libs/gst/rtsp/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst-libs/gst/interfaces/Android.mk
+include $(GST_PLUGINS_BASE_TOP)/gst-libs/gst/app/Android.mk
 
 # plugins without external dependencies
 include $(GST_PLUGINS_BASE_TOP)/gst/audiotestsrc/Android.mk
@@ -29,6 +30,7 @@ include $(GST_PLUGINS_BASE_TOP)/gst/videorate/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst/videoscale/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst/videotestsrc/Android.mk
 include $(GST_PLUGINS_BASE_TOP)/gst/volume/Android.mk
+include $(GST_PLUGINS_BASE_TOP)/gst/app/Android.mk
 
 # plugins WITH external dependencies
 include $(GST_PLUGINS_BASE_TOP)/ext/ogg/Android.mk
